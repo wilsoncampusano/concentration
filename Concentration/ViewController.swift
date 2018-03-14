@@ -12,14 +12,16 @@ class ViewController: UIViewController {
 	
 	@IBOutlet weak var flipLabel: UILabel!
 	
+	
+	var flipCount: Int = 0 {
+		didSet{
+			flipLabel.text = "Flips: \(flipCount)"
+		}
+	}
 	@IBAction func touchFlipCard(_ sender: UIButton) {
+		flipCount += 1
 		flipCard(withEmoji: "👻", on: sender)
 	}
-	
-	@IBAction func touchSecondCard(_ sender: UIButton) {
-		flipCard(withEmoji: "🎃", on: sender)
-	}
-
 	
 	func flipCard(withEmoji emoji: String, on button: UIButton ){
 		if button.currentTitle == emoji {
