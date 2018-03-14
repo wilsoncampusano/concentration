@@ -64,6 +64,7 @@
 				659A0D4620596F380070B6A9 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 1;
 		};
 		659A0D4620596F380070B6A9 /* Products */ = {
 			isa = PBXGroup;
