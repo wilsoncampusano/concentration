@@ -11,5 +11,10 @@ import XCTest
 
 class ConcentrationTests: XCTestCase {
 	
+	
+	func testCanRunEnvironment(){
+	
+		XCTAssertTrue(true)
+	}
     
 }

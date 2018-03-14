@@ -10,33 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 	
-	@IBOutlet weak var label: UILabel!
+	@IBOutlet weak var flipLabel: UILabel!
 	
 	@IBAction func touchFlipCard(_ sender: UIButton) {
-		print("touching ghost")
 		flipCard(withEmoji: "👻", on: sender)
 	}
 	
 	@IBAction func touchSecondCard(_ sender: UIButton) {
 		flipCard(withEmoji: "🎃", on: sender)
-		print("touching pumpking")
 	}
-	
-	@IBAction func touchHeart(_ sender: UIButton) {
-	
-		if sender.currentTitle == "" {
-			sender.setTitle("😘", for: UIControlState.normal)
-			sender.backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-			label.text = "Jaisi"
-			print("jaisi")
-		}else{
-			sender.setTitle("", for: UIControlState.normal)
-			sender.backgroundColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)
-			label.text = ""
-		}
-		
-	}
-	
+
 	
 	func flipCard(withEmoji emoji: String, on button: UIButton ){
 		if button.currentTitle == emoji {
