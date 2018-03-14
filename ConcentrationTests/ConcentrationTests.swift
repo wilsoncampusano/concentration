@@ -10,6 +10,6 @@ import XCTest
 @testable import Concentration
 
 class ConcentrationTests: XCTestCase {
-    
+	
     
 }
