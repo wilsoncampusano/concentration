@@ -14,12 +14,16 @@ class ViewController: UIViewController {
 			flipLabel.text = "Flips: \(flipCount)"
 		}
 	}
+	var emojiChoices = ["🎃","👻","🎃","👻"]
 	
 	@IBOutlet var cardButtons: [UIButton]!
 	@IBOutlet weak var flipLabel: UILabel!
 	@IBAction func touchFlipCard(_ sender: UIButton) {
 		flipCount += 1
-		flipCard(withEmoji: "👻", on: sender)
+		
+		if let indexCard = cardButtons.index(of: sender){
+			flipCard(withEmoji: emojiChoices[indexCard], on: sender)
+		}
 	}
 	
 	func flipCard(withEmoji emoji: String, on button: UIButton ){

@@ -24,7 +24,7 @@
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <connections>
-                                    <action selector="touchFlipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dD6-VY-WRX"/>
+                                    <action selector="touchFlipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JQa-Fv-GyG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XO0-7f-i5L">
@@ -33,7 +33,7 @@
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <connections>
-                                    <action selector="touchFlipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lMI-7O-R3K"/>
+                                    <action selector="touchFlipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fSL-CC-sqn"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flips " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jR-kB-kOi">
@@ -49,7 +49,7 @@
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <connections>
-                                    <action selector="touchFlipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FGT-JL-xkk"/>
+                                    <action selector="touchFlipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LUx-ew-K7X"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4m-dc-kSZ">
@@ -57,6 +57,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <connections>
+                                    <action selector="touchFlipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3LI-VJ-CSA"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -67,6 +70,7 @@
                         <outletCollection property="cardButtons" destination="L4m-dc-kSZ" collectionClass="NSMutableArray" id="JLE-7B-vcA"/>
                         <outletCollection property="cardButtons" destination="AbP-8X-z08" collectionClass="NSMutableArray" id="dVc-W3-Hgd"/>
                         <outletCollection property="cardButtons" destination="XO0-7f-i5L" collectionClass="NSMutableArray" id="cWP-RQ-zEv"/>
+                        <outletCollection property="cardButtons" destination="ulq-aX-PbQ" collectionClass="NSMutableArray" id="CZi-d8-FQV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
